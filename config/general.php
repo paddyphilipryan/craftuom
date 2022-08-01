@@ -22,7 +22,7 @@ return GeneralConfig::create()
     // Enable Dev Mode on the dev environment (see https://craftcms.com/guides/what-dev-mode-does)
     ->devMode($isDev)
     // Only allow administrative changes on the dev environment
-    ->allowAdminChanges($isDev)
+    ->allowAdminChanges(true)
     // Disallow robots everywhere except the production environment
     ->disallowRobots(!$isProd)
 ;
